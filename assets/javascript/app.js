@@ -4,6 +4,8 @@ $(document).ready(function(){
 	var timeLeft = 10;
 	// variable that will hold time until next question
 	var timeBetween = 5;
+	// variable which holds our setInterval, clear this to stop timer
+	var timer;
 	// Load first question, when start button clicked
 	$(document).on("click", "#start", function(e){
 		triviaGame.loadQuestion();
@@ -60,9 +62,10 @@ $(document).ready(function(){
 		},
 		clicked: function(e){
 			clearInterval(timer);
-			console.log(triviaQuestions[this.currentQuestion].correctAnswer);
+			console.log("correct value from triviaQuestions: " + triviaQuestions[this.currentQuestion].correctAnswer);
 
-			console.log($(e.target).data("name"));
+			console.log("button value " + $(".data-name").data("name"));
+			
 			if($(e.target).data("name") === triviaQuestions[this.currentQuestion].correctAnswer){
 				console.log("CORRECT ANSWER!");
 			}
