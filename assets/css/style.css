@@ -1,0 +1,40 @@
+body { 
+  background: url(../images/cheap_diagonal_fabric.png); /*no-repeat center center fixed;*/ 
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+
+.jumbotron {
+	background: url(../images/jumbotron-office-resized.jpg) no-repeat center;
+	box-sizing: border-box;
+  	
+}
+
+.push-spaces
+{
+    height: 375px;
+}
+
+.answer-button {
+	background-color: transparent;
+
+	color: black;
+	border: none;
+
+}
+
+.customHeader {
+	color: white;
+	font-family: garamond;
+	font-size: 80px;
+}
+
+h1 {
+    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 80px;
+}
+
